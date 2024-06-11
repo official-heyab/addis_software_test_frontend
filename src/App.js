@@ -60,7 +60,7 @@ function App() {
 
 
 
-
+    {stats ? (
       <div className="container mt-3">
         <div className="list row">
           <div className="col-md-6">
@@ -96,12 +96,12 @@ function App() {
               </li> 
 
             </ul>
-            <ul>
-              
-            </ul>
           </div>
         </div>
       </div>
+      ) : (
+        <p>Null Stat</p>
+      )}
 
 
     </div>
